@@ -180,7 +180,8 @@ class UserController extends Controller
             }
         }
 
-        return Redirect::route('admin.users.index');
+        return langRedirectRoute('admin.user.index');
+        #return Redirect::route('admin.users.index');
     }
 
     /**

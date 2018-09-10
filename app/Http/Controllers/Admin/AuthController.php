@@ -54,6 +54,13 @@ class AuthController extends Controller
             'password' => $request->get('password'),
         );
 
+        
+        #$user = Sentinel::findById(3);
+        #$Activation = Sentinel::getActivationRepository();
+        #$activation = $Activation->create($user);
+        #dd($activation);
+        #$Activation->complete($user, 'nCySguayVCdbwSCg2K5E8dRrltxyTVmL');
+        
         $rememberMe = $request->get('rememberMe');
 
         try {
