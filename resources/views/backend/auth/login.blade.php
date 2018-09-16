@@ -21,7 +21,6 @@
     <![endif]-->
 </head>
 <body class="login-page">
-<span id="forkongithub"><a target="_blank" href="https://github.com/sseffa/fullycms">Fork me on GitHub</a></span>
 <div class="login-box">
     <div class="login-logo">
         <a href="../../index2.html"><b>fully</b>cms</a>
