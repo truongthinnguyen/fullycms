@@ -11,12 +11,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <h1>Contact Us</h1>
+                <h1>Liên Hệ</h1>
 
                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
-            </div>
-            <div class="col-sm-6">
-                @yield('partial/breadcrumbs', Breadcrumbs::render('contact'))
             </div>
         </div>
     </div>
@@ -104,11 +101,6 @@
 
         </div>
         <!--/.col-sm-8-->
-        <div class="col-sm-4">
-            <h4>{!! trans('fully.our_location') !!}</h4>
-            <iframe width="100%" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=""></iframe>
-        </div>
-        <!--/.col-sm-4-->
     </div>
 </section><!--/#contact-page-->
 @stop
