@@ -1,3 +1,6 @@
+@extends('frontend/layout/layout')
+@section('content')
+
 <div id="main-wrapper">
     <!-- Page Preloader -->
     <div id="preloader">
@@ -45,20 +48,8 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="right_section">
-                                    <ul class="nav navbar-nav">
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="#">Register</a></li>
-                                        <li class="dropdown lang">
-                                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">En <i
-                                                class="fa fa-angle-down"></i></button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                                <li><a href="#">Bn</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                     <!-- Language Section -->
-                                    <ul class="nav-cta hidden-xs">
+                                    <ul class="nav-cta hidden-xs" style="left: 0">
                                         <li class="dropdown">
                                             <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i
                                                 class="fa fa-search"></i></a>
@@ -69,9 +60,9 @@
                                                             <!-- Input Group -->
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control"
-                                                                    placeholder="Type Something"> <span class="input-group-btn">
+                                                                    placeholder="Nhập từ khóa"> <span class="input-group-btn">
                                                                 <button type="submit"
-                                                                    class="btn btn-primary">Search
+                                                                    class="btn btn-primary">Tìm kiếm
                                                                 </button>
                                                                 </span>
                                                             </div>
@@ -101,13 +92,13 @@
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="#navbar-collapse-1">
                                     <ul class="nav navbar-nav main-nav">
-                                        <li class="active"><a href="index.html">News</a></li>
-                                        <li><a href="category.html">Mobile</a></li>
-                                        <li><a href="blog.html">Tablet</a></li>
-                                        <li><a href="blog.html">Gadgets</a></li>
-                                        <li><a href="blog.html">Camera</a></li>
-                                        <li><a href="blog.html">Design</a></li>
-                                        <li class="dropdown m-menu-fw">
+                                        <li class="active"><a href="/">Trang chủ</a></li>
+                                        <li><a href="/en/intro">Giới thiệu</a></li>
+                                        <li><a href="/en/projects">Dự án</a></li>
+                                        <li><a href="/en/news">Tin tức</a></li>
+                                        <li><a href="/en/recruiment">Tuyển dụng</a></li>
+                                        <li><a href="/en/contact">Liên hệ</a></li>
+                                        <!-- <li class="dropdown m-menu-fw">
                                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">More
                                             <span><i class="fa fa-angle-down"></i></span></a>
                                             <ul class="dropdown-menu">
@@ -148,7 +139,7 @@
                                                     </div>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                                 <!-- .navbar-collapse -->
@@ -273,124 +264,6 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8">
-                            <div class="category_section mobile">
-                                <div class="article_title header_purple">
-                                    <h2><a href="category.html" target="_self">Mobile</a></h2>
-                                </div>
-                                <!----article_title------>
-                                <div class="category_article_wrapper">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="top_article_img">
-                                                <a href="single.html" target="_self"><img class="img-responsive"
-                                                    src="assets/img/cat-mobi-left-1.jpg" alt="feature-top">
-                                                </a>
-                                            </div>
-                                            <!----top_article_img------>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <span class="tag purple">Mobile</span>
-                                            <div class="category_article_title">
-                                                <h2><a href="single.html" target="_self">Airbnb launches photo-centric app for iPads and Android
-                                                    tablets. </a>
-                                                </h2>
-                                            </div>
-                                            <!----category_article_title------>
-                                            <div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
-                                            <!----category_article_date------>
-                                            <div class="category_article_content">
-                                                Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate
-                                                B2C users after installed base benefits. Dramatically visualize customer directed convergence
-                                                without revolutionary ROI.
-                                            </div>
-                                            <!----category_article_content------>
-                                            <div class="media_social">
-                                                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                            </div>
-                                            <!----media_social------>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="category_article_wrapper">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="media">
-                                                <div class="media-left">
-                                                    <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm1.jpg"
-                                                        alt="Generic placeholder image"></a>
-                                                </div>
-                                                <div class="media-body">
-                                                    <span class="tag purple">Mobile</span>
-                                                    <h3 class="media-heading"><a href="single.html" target="_self">Apple launches photo-centric
-                                                        wrist watch for Android</a>
-                                                    </h3>
-                                                    <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
-                                                    <div class="media_social">
-                                                        <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Shares</span>
-                                                        <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Comments</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media">
-                                                <div class="media-left">
-                                                    <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm3.jpg"
-                                                        alt="Generic placeholder image"></a>
-                                                </div>
-                                                <div class="media-body">
-                                                    <span class="tag purple">Mobile</span>
-                                                    <h3 class="media-heading"><a href="single.html" target="_self">The Portable Charger or data
-                                                        cable</a>
-                                                    </h3>
-                                                    <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
-                                                    <div class="media_social">
-                                                        <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Shares</span>
-                                                        <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Comments</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="media">
-                                                <div class="media-left">
-                                                    <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm2.jpg"
-                                                        alt="Generic placeholder image"></a>
-                                                </div>
-                                                <div class="media-body">
-                                                    <span class="tag purple">Mobile</span>
-                                                    <h3 class="media-heading"><a href="single.html" target="_self">Iphone 6 launches white & Grey
-                                                        colors handset</a>
-                                                    </h3>
-                                                    <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
-                                                    <div class="media_social">
-                                                        <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Shares</span>
-                                                        <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Comments</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="media">
-                                                <div class="media-left">
-                                                    <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm4.jpg"
-                                                        alt="Generic placeholder image"></a>
-                                                </div>
-                                                <div class="media-body">
-                                                    <span class="tag purple">Mobile</span>
-                                                    <h3 class="media-heading"><a href="single.html" target="_self">Fully new look slim handset
-                                                        like</a>
-                                                    </h3>
-                                                    <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
-                                                    <div class="media_social">
-                                                        <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Shares</span>
-                                                        <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Comments</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="divider"><a href="#">More News&nbsp;&raquo;</a></p>
-                            </div>
-                            <!-- Mobile News Section -->
                             <div class="category_section tablet">
                                 <div class="article_title header_pink">
                                     <h2><a href="category.html" target="_self">Tablet Pc</a></h2>
@@ -421,11 +294,7 @@
                                                     procrastinate B2C users after.
                                                 </div>
                                                 <!-- category_article_content -->
-                                                <div class="media_social">
-                                                    <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                    <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                                </div>
-                                                <!-- media_social -->
+                                            
                                             </div>
                                             <!-- category_article_body -->
                                         </div>
@@ -452,11 +321,6 @@
                                                     procrastinate B2C users after.
                                                 </div>
                                                 <!-- category_article_content -->
-                                                <div class="media_social">
-                                                    <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                    <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                                </div>
-                                                <!-- media_social -->
                                             </div>
                                             <!-- category_article_body -->
                                         </div>
@@ -468,113 +332,7 @@
                                 <p class="divider"><a href="#">More News&nbsp;&raquo;</a></p>
                             </div>
                             <!-- Tablet News Section -->
-                            <div class="category_section gadget">
-                                <div class="article_title header_black">
-                                    <h2><a href="category.html" target="_self">Gadgets</a></h2>
-                                </div>
-                                <div class="category_article_wrapper">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="category_article_body">
-                                                <div class="top_article_img">
-                                                    <a href="single.html" target="_self">
-                                                    <img class="img-responsive" src="assets/img/gad_top1.jpg" alt="feature-top">
-                                                    </a>
-                                                </div>
-                                                <!-- top_article_img -->
-                                                <span class="tag black"><a href="category.html" target="_self">Gadgets</a></span>
-                                                <div class="category_article_title">
-                                                    <h2><a href="single.html" target="_self">A good news for gadget users Ds tech comming soon</a>
-                                                    </h2>
-                                                </div>
-                                                <!-- category_article_title -->
-                                                <div class="article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
-                                                <!----article_date------>
-                                                <div class="category_article_content">
-                                                    Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
-                                                    procrastinate B2C users after.
-                                                </div>
-                                                <!-- category_article_content -->
-                                                <div class="media_social">
-                                                    <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                    <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                                </div>
-                                                <!-- media_social -->
-                                            </div>
-                                            <!-- category_article_body -->
-                                            <div class="category_article_list">
-                                                <div class="media">
-                                                    <div class="media-left">
-                                                        <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm1.jpg"
-                                                            alt="Generic placeholder image"></a>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h3 class="media-heading"><a href="single.html" target="_self">Apple launches photo-centric
-                                                            wrist watch for Android</a>
-                                                        </h3>
-                                                        <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
-                                                        <div class="media_social">
-                                                            <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Shares</span>
-                                                            <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Comments</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="media">
-                                                    <div class="media-left">
-                                                        <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm3.jpg"
-                                                            alt="Generic placeholder image"></a>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h3 class="media-heading"><a href="single.html" target="_self">Apple launches photo-centric
-                                                            wrist watch for Android</a>
-                                                        </h3>
-                                                        <span class="media-date"><a href="#">10Aug- 2015</a>,  by: <a href="#">Eric joan</a></span>
-                                                        <div class="media_social">
-                                                            <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Shares</span>
-                                                            <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Comments</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- category_article_list -->
-                                        </div>
-                                        <!-- col-md-6 -->
-                                        <div class="col-md-6">
-                                            <div class="category_article_body">
-                                                <div class="top_article_img">
-                                                    <img class="img-responsive" src="assets/img/gad_top2.jpg" alt="feature-top">
-                                                </div>
-                                                <!-- top_article_img -->
-                                                <span class="tag black">Gadgets</span>
-                                                <div class="category_article_title">
-                                                    <h2><a href="single.html" target="_self">Apple launches photo-centric app for iPads and Android
-                                                        tablets</a>
-                                                    </h2>
-                                                </div>
-                                                <!-- category_article_title -->
-                                                <div class="article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
-                                                <!-- article_date -->
-                                                <div class="category_article_content">
-                                                    Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
-                                                    procrastinate B2C users after installed base benefits. Dramatically visualize customer directed
-                                                    convergence without revolutionary ROI.
-                                                </div>
-                                                <!-- category_article_content -->
-                                                <div class="article_social">
-                                                    <span><i class="fa fa-share-alt"></i><a href="#">424</a>Shares</span>
-                                                    <span><i class="fa fa-comments-o"></i><a href="#">4</a>Comments</span>
-                                                </div>
-                                                <!-- article_social -->
-                                            </div>
-                                            <!-- category_article_body -->
-                                        </div>
-                                    </div>
-                                    <!-- row -->
-                                </div>
-                                <!-- category_article_wrapper -->
-                                <p class="divider"><a href="#">More News&nbsp;&raquo;</a></p>
-                            </div>
-                            <!-- Gadget News Section -->
+                        
                             <div class="category_section camera">
                                 <div class="article_title header_orange">
                                     <h2><a href="category.html" target="_self">Camera</a></h2>
@@ -604,11 +362,7 @@
                                                 procrastinate.
                                             </div>
                                             <!-- category_article_content -->
-                                            <div class="media_social">
-                                                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                            </div>
-                                            <!-- media_social -->
+                                          
                                         </div>
                                         <!-- col-md-7 -->
                                     </div>
@@ -639,11 +393,7 @@
                                                 procrastinate.
                                             </div>
                                             <!-- category_article_content -->
-                                            <div class="media_social">
-                                                <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                            </div>
-                                            <!-- media_social -->
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -672,19 +422,7 @@
                                                 procrastinate.
                                             </div>
                                             <!-- category_article_content -->
-                                            <div class="media_social">
-                                                <span>
-                                                <a href="#">
-                                                <i class="fa fa-share-alt"></i>424
-                                                </a> Shares
-                                                </span>
-                                                <span>
-                                                <a href="#">
-                                                <i class="fa fa-comments-o"></i>4
-                                                </a> Comments
-                                                </span>
-                                            </div>
-                                            <!-- media_social -->
+                                          
                                         </div>
                                         <!-- col-md-7 -->
                                     </div>
@@ -694,139 +432,6 @@
                                 <p class="divider"><a href="#">More News&nbsp;&raquo;</a></p>
                             </div>
                             <!-- Camera News Section -->
-                            <div class="category_section design">
-                                <div class="article_title header_blue">
-                                    <h2><a href="category.html" target="_self">Design</a></h2>
-                                </div>
-                                <!-- row -->
-                                <div class="category_article_wrapper">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="category_article_body">
-                                                <div class="top_article_img">
-                                                    <a href="single.html" target="_self">
-                                                    <img class="img-responsive" src="assets/img/design_top1.jpg" alt="feature-top">
-                                                    </a>
-                                                </div>
-                                                <!-- top_article_img -->
-                                                <span class="tag blue"><a href="category.html" target="_self">Design</a></span>
-                                                <div class="category_article_title">
-                                                    <h2><a href="single.html" target="_self">Marketing Tranportation Fast and </a></h2>
-                                                </div>
-                                                <!-- category_article_title -->
-                                                <div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
-                                                <!----category_article_date------>
-                                                <!-- category_article_date -->
-                                                <div class="category_article_content">
-                                                    Collaboratively administrate empowered markets via plug-and-play networks.
-                                                </div>
-                                                <!-- category_article_content -->
-                                                <div class="media_social">
-                                                    <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                    <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                                </div>
-                                                <!-- media_social -->
-                                            </div>
-                                            <!-- category_article_body -->
-                                        </div>
-                                        <!-- col-md-6 -->
-                                        <div class="col-md-6">
-                                            <div class="category_article_body">
-                                                <div class="top_article_img">
-                                                    <a href="single.html" target="_self">
-                                                    <img class="img-responsive" src="assets/img/design_top2.jpg" alt="feature-top">
-                                                    </a>
-                                                </div>
-                                                <!-- top_article_img -->
-                                                <span class="tag blue"><a href="category.html" target="_self">Design</a></span>
-                                                <div class="category_article_title">
-                                                    <h2><a href="single.html" target="_self">Theme Hippo launches Unship </a></h2>
-                                                </div>
-                                                <!-- category_article_title -->
-                                                <div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
-                                                <!----category_article_date------>
-                                                <!-- category_article_date -->
-                                                <div class="category_article_content">
-                                                    Collaboratively administrate empowered markets via plug-and-play networks.
-                                                </div>
-                                                <!-- category_article_content -->
-                                                <div class="media_social">
-                                                    <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                    <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                                </div>
-                                                <!-- media_social -->
-                                            </div>
-                                            <!-- category_article_body -->
-                                        </div>
-                                        <!-- col-md-6 -->
-                                    </div>
-                                    <!-- row -->
-                                </div>
-                                <!-- category_article_wrapper -->
-                                <div class="category_article_wrapper">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="category_article_body">
-                                                <div class="top_article_img">
-                                                    <a href="single.html" target="_self">
-                                                    <img class="img-responsive" src="assets/img/design_top3.jpg" alt="feature-top">
-                                                    </a>
-                                                </div>
-                                                <!-- top_article_img -->
-                                                <span class="tag blue"><a href="category.html" target="_self">Design</a></span>
-                                                <div class="category_article_title">
-                                                    <h2><a href="single.html" target="_self">Huge Ultimate website builder </a></h2>
-                                                </div>
-                                                <!-- category_article_title -->
-                                                <div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
-                                                <!----category_article_date------>
-                                                <!-- category_article_date -->
-                                                <div class="category_article_content">
-                                                    Collaboratively administrate empowered markets via plug-and-play networks.
-                                                </div>
-                                                <!-- category_article_content -->
-                                                <div class="media_social">
-                                                    <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                    <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                                </div>
-                                                <!-- media_social -->
-                                            </div>
-                                            <!-- category_article_body -->
-                                        </div>
-                                        <!-- col-md-6 -->
-                                        <div class="col-md-6">
-                                            <div class="category_article_body">
-                                                <div class="top_article_img">
-                                                    <img class="img-responsive" src="assets/img/design_top4.jpg" alt="feature-top">
-                                                </div>
-                                                <!-- top_article_img -->
-                                                <span class="tag blue"><a href="category.html" target="_self">Design</a></span>
-                                                <div class="category_article_title">
-                                                    <h2><a href="single.html" target="_self">Just another theme xdesign</a></h2>
-                                                </div>
-                                                <!-- category_article_title -->
-                                                <div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
-                                                <!-- category_article_date -->
-                                                <div class="category_article_content">
-                                                    Collaboratively administrate empowered markets via plug-and-play networks.
-                                                </div>
-                                                <!-- category_article_content -->
-                                                <div class="media_social">
-                                                    <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Shares</span>
-                                                    <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                                </div>
-                                                <!-- media_social -->
-                                            </div>
-                                            <!-- category_article_body -->
-                                        </div>
-                                        <!-- top_article_img -->
-                                    </div>
-                                    <!-- top_article_img -->
-                                </div>
-                                <!-- top_article_img -->
-                                <p class="divider"><a href="#">More News&nbsp;&raquo;</a></p>
-                            </div>
-                            <!-- Design News Section -->
                         </div>
                         <!-- Left Section -->
                         <div class="col-md-4">
@@ -920,10 +525,7 @@
                                 <img class="img-responsive adv_img" src="assets/img/right_add4.jpg" alt="add_one">
                             </div>
                             <!-- Advertisement -->
-                            <div class="widget hidden-xs m30">
-                                <img class="img-responsive widget_img" src="assets/img/right_add5.jpg" alt="add_one">
-                            </div>
-                            <!-- Advertisement -->
+                           
                             <div class="widget reviews m30">
                                 <div class="widget_title widget_black">
                                     <h2><a href="#">Reviews</a></h2>
@@ -1000,117 +602,6 @@
                                 <p class="widget_divider"><a href="#" target="_self">More News&nbsp;&raquo;</a></p>
                             </div>
                             <!-- Reviews News -->
-                            <div class="widget hidden-xs m30">
-                                <img class="img-responsive widget_img" src="assets/img/right_add6.jpg" alt="add_one">
-                            </div>
-                            <!-- Advertisement -->
-                            <div class="widget m30">
-                                <div class="widget_title widget_black">
-                                    <h2><a href="#">Most Commented</a></h2>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#"><img class="media-object" src="assets/img/pop_right1.jpg" alt="Generic placeholder image"></a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">
-                                            <a href="single.html" target="_self">Yasaki camera launches new generic hi-speed shutter camera.</a>
-                                        </h3>
-                                        <div class="media_social">
-                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#"><img class="media-object" src="assets/img/pop_right2.jpg" alt="Generic placeholder image"></a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">
-                                            <a href="single.html" target="_self">Samsung is the best mobile in the android market.</a>
-                                        </h3>
-                                        <div class="media_social">
-                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#"><img class="media-object" src="assets/img/pop_right3.jpg" alt="Generic placeholder image"></a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">
-                                            <a href="single.html" target="_self">Apple launches photo-centric wrist watch for Android</a>
-                                        </h3>
-                                        <div class="media_social">
-                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#"><img class="media-object" src="assets/img/pop_right4.jpg" alt="Generic placeholder image"></a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">
-                                            <a href="single.html" target="_self">DSLR is the most old camera at this time readmore about new
-                                            products</a>
-                                        </h3>
-                                        <div class="media_social">
-                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Comments</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="widget_divider"><a href="#" target="_self">More News&nbsp;&nbsp;&raquo; </a></p>
-                            </div>
-                            <!-- Most Commented News -->
-                            <div class="widget m30">
-                                <div class="widget_title widget_black">
-                                    <h2><a href="#">Editor Corner</a></h2>
-                                </div>
-                                <div class="widget_body">
-                                    <img class="img-responsive left" src="assets/img/editor.jpg"
-                                        alt="Generic placeholder image">
-                                    <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
-                                        users after installed base benefits. Dramatically visualize customer directed convergence without
-                                    </p>
-                                    <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
-                                        users after installed base benefits. Dramatically visualize customer directed convergence without
-                                        revolutionary ROI.
-                                    </p>
-                                    <button class="btn pink">Read more</button>
-                                </div>
-                            </div>
-                            <!-- Editor News -->
-                            <div class="widget hidden-xs m30">
-                                <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-                                <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-                                <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-                                <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-                            </div>
-                            <!--Advertisement -->
-                            <div class="widget m30">
-                                <div class="widget_title widget_black">
-                                    <h2><a href="#">Readers Corner</a></h2>
-                                </div>
-                                <div class="widget_body">
-                                    <img class="img-responsive left" src="assets/img/reader.jpg"
-                                        alt="Generic placeholder image">
-                                    <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
-                                        users after installed base benefits. Dramatically visualize customer directed convergence without
-                                    </p>
-                                    <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
-                                        users after installed base benefits. Dramatically visualize customer directed convergence without
-                                        revolutionary ROI.
-                                    </p>
-                                    <button class="btn pink">Read more</button>
-                                </div>
-                            </div>
-                            <!--  Readers Corner News -->
-                            <div class="widget hidden-xs m30">
-                                <img class="img-responsive widget_img" src="assets/img/podcast.jpg" alt="add_one">
-                            </div>
-                            <!--Advertisement-->
                         </div>
                         <!-- Right Section -->
                     </div>
@@ -1410,3 +901,4 @@
     <!-- .uc-mobile-menu -->
 </div>
 <!-- #main-wrapper -->
+@endsection

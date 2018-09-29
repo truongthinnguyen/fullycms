@@ -24,24 +24,9 @@
     <![endif]-->
 </head><!--/head-->
 <body id="page-top" data-spy="scroll" data-target=".navbar">
-<!-- @include('frontend/layout/menu') -->
+
 @yield('content')
-<!-- @include('frontend/layout/footer') -->
 
-<!-- jquery Core-->
-<script src="assets/js/jquery-2.1.4.min.js"></script>
-
-<!-- Bootstrap -->
-<script src="assets/js/bootstrap.min.js"></script>
-
-<!-- Theme Menu -->
-<script src="assets/js/mobile-menu.js"></script>
-
-<!-- Owl carousel -->
-<script src="assets/js/owl.carousel.min.js"></script>
-
-<!-- Theme Script -->
-<script src="assets/js/script.js"></script>
 
 {!! HTML::script("assets/js/jquery-2.1.4.min.js") !!}
 {!! HTML::script("assets/js/bootstrap.min.js") !!}
