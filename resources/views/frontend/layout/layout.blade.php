@@ -8,53 +8,46 @@
     <meta name="author" content="Mr. Lam">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {!! HTML::style("https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese") !!}
-    {!! HTML::style("assets/bootstrap/css/bootstrap.min.css") !!}
-    {!! HTML::style("assets/animate.css/animate.min.css") !!}
-    {!! HTML::style("assets/socicon/css/socicon.min.css") !!}
-    {!! HTML::style("assets/mobirise/css/style.css") !!}
-    {!! HTML::style("assets/mobirise-slider/style.css") !!}
-    {!! HTML::style("assets/mobirise-gallery/style.css") !!}
-    {!! HTML::style("assets/mobirise/css/mbr-additional.css") !!}
-
+    {!! HTML::style("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500&amp;subset=cyrillic,latin,greek,vietnamese") !!}
+    {!! HTML::style("assets/css/bootstrap.min.css") !!}
+    {!! HTML::style("assets/fonts/font-awesome/font-awesome.min.css") !!}
+    {!! HTML::style("assets/css/mobile-menu.css") !!}
+    {!! HTML::style("assets/css/owl.carousel.css") !!}
+    {!! HTML::style("assets/css/owl.theme.default.min.css") !!}
+    {!! HTML::style("assets/css/style.css") !!}
+   
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    {!! HTML::script("frontend/js/html5shiv.js") !!}
-    {!! HTML::script("frontend/js/respond.min.js") !!}
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="assets/images/discover-mobile-350x350-16.png" type="image/x-icon">
-
-    <!-- <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', "{!! $settings['ga_code']  or 'UA-61740707-1' !!}"]);
-        _gaq.push(['_trackPageview']);
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-    </script> -->
 </head><!--/head-->
-<body>
-@include('frontend/layout/menu')
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<!-- @include('frontend/layout/menu') -->
 @yield('content')
-@include('frontend/layout/footer')
+<!-- @include('frontend/layout/footer') -->
 
-{!! HTML::script("assets/jquery/jquery.min.js") !!}
-{!! HTML::script("assets/bootstrap/js/bootstrap.min.js") !!}
-{!! HTML::script("https://maps.googleapis.com/maps/api/js") !!}
-{!! HTML::script("assets/smooth-scroll/SmoothScroll.js") !!}
-{!! HTML::script("assets/jquery-mb-ytplayer/jquery.mb.YTPlayer.min.js") !!}
-{!! HTML::script("assets/jarallax/jarallax.js") !!}
-{!! HTML::script("assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js") !!}
-{!! HTML::script("assets/masonry/masonry.pkgd.min.js") !!}
-{!! HTML::script("assets/imagesloaded/imagesloaded.pkgd.min.js") !!}
-{!! HTML::script("assets/social-likes/social-likes.js") !!}
-{!! HTML::script("assets/mobirise/js/script.js") !!}
-{!! HTML::script("assets/mobirise-gallery/script.js") !!}
+<!-- jquery Core-->
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Theme Menu -->
+<script src="assets/js/mobile-menu.js"></script>
+
+<!-- Owl carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- Theme Script -->
+<script src="assets/js/script.js"></script>
+
+{!! HTML::script("assets/js/jquery-2.1.4.min.js") !!}
+{!! HTML::script("assets/js/bootstrap.min.js") !!}
+{!! HTML::script("assets/js/mobile-menu.js") !!}
+{!! HTML::script("assets/js/owl.carousel.min.js") !!}
+{!! HTML::script("assets/js/script.js") !!}
 
 </body>
 </html>
