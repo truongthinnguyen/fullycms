@@ -2,30 +2,41 @@
 @section('content')
 {!! HTML::style('ckeditor/contents.css') !!}
 
-<section id="title" class="emerald">
+<section id="entity_section" class="entity_section">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <h1>Project</h1>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+            <div class="col-md-8">
+                <div class="entity_wrapper">
+                    <div class="entity_title">
+                        <h1><a href="#">{!! $project->title !!}</a></h1>
+                    </div>
+                    <!-- entity_title -->
+                    <div class="entity_meta"><a href="#" target="_self">{!! $project->created_at !!}</a></a>
+                    </div>
+                   
+                    <div class="entity_thumb">
+                        @if($project->path)
+                        <img class="img-responsive" src="{!! url($project->path . 'thumb_' . $project->file_name) !!}" alt="feature-top">
+                        @else
+                        <img class="img-responsive" src="{!! url('assets/images/news_m_thumb.png') !!}" alt="feature-top">
+                        @endif
+                    </div>
+                    <!-- entity_thumb -->
+                    <div class="entity_content">
+                        {!! $project->description !!}
+                    </div>
+                    <!-- entity_content -->
+                </div>
+                <!-- entity_wrapper -->
+               
             </div>
-            <div class="col-sm-6">
-                @yield('partial/breadcrumbs', Breadcrumbs::render('project.show', $project))
-            </div>
+            <!--Left Section-->
+            
+            @include('frontend/news/sidebar')
         </div>
+        <!-- row -->
     </div>
-</section><!--/#title-->
+    <!-- container -->
+</section>
 
-<section id="project" class="container">
-    <h2>{!! $project->title !!}</h2>
-    <h6 class="pull-right">{!! $project->created_at !!}</h6>
-    <br>
-    <br>
-    @if($project->path)
-    <img style="border: 1px solid #b0afaf; padding:5px; float:left; margin-right: 20px; margin-bottom: 10px;" src="{!! url($project->path . 'thumb_' . $project->file_name) !!}" class="img-square center-block">
-    @else
-    <img style="border: 1px solid #b0afaf; padding:5px; float:left; margin-right: 20px; margin-bottom: 10px;" src="{!! url('assets/images/project_thumb.png') !!}" class="img-square center-block">
-    @endif
-    {!! $project->description !!}
-</section><!--#faqs-->
 @stop

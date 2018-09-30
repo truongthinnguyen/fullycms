@@ -248,7 +248,7 @@
                 <div class="container">
                     <hr class="footer-top">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="footer_widget_title">
                                 <h3><a href="category.html" target="_self">Địa chỉ</a></h3>
                             </div>
@@ -279,23 +279,44 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-5">
                             <div class="footer_widget_title">
-                                <h3><a href="category.html" target="_self">Tech Photos</a></h3>
+                                <h3><a href="category.html" target="_self">Đối tác</a></h3>
                             </div>
                             <div class="widget_photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo1.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo2.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo3.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo4.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo5.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo6.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo7.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo8.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo9.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo10.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo11.jpg') !!}" alt="Tech Photos">
-                                <img class="img-thumbnail" src="{!! url('assets/img/tech_photo12.jpg') !!}" alt="Tech Photos">
+                                <div class="row">
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac1.jpg') !!}" alt="Tech Photos">
+                                    </div>    
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac2.jpg') !!}" alt="Tech Photos">
+                                    </div>
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac3.jpg') !!}" alt="Tech Photos">
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac4.jpg') !!}" alt="Tech Photos">
+                                    </div>    
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac5.jpg') !!}" alt="Tech Photos">
+                                    </div>
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac6.jpg') !!}" alt="Tech Photos">
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac7.jpg') !!}" alt="Tech Photos">
+                                    </div>    
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac8.jpg') !!}" alt="Tech Photos">
+                                    </div>
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac9.jpg') !!}" alt="Tech Photos">
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac10.jpg') !!}" alt="Tech Photos">
+                                    </div>    
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac11.jpg') !!}" alt="Tech Photos">
+                                    </div>
+                                    <div class="col-md-4"><img class="img-thumbnail" src="{!! url('assets/img/doitac12.jpg') !!}" alt="Tech Photos">
+                                    </div> 
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
