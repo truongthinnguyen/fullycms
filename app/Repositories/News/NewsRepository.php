@@ -180,9 +180,9 @@ class NewsRepository extends RepositoryAbstract implements NewsInterface, Crudab
                 if ($upload_success) {
 
                     // resizing an uploaded file
-                    Image::make($destinationPath.$fileName)
+                    /*Image::make($destinationPath.$fileName)
                         ->resize($this->width, $this->height)
-                        ->save($destinationPath.$fileName);
+                        ->save($destinationPath.$fileName);*/
 
                     $this->news->file_name = $fileName;
                     $this->news->file_size = $fileSize;
@@ -234,9 +234,9 @@ class NewsRepository extends RepositoryAbstract implements NewsInterface, Crudab
                 if ($upload_success) {
 
                     // resizing an uploaded file
-                    Image::make($destinationPath.$fileName)
+                    /*Image::make($destinationPath.$fileName)
                         ->resize($this->width, $this->height)
-                        ->save($destinationPath.$fileName);
+                        ->save($destinationPath.$fileName);*/
 
                     $this->news->file_name = $fileName;
                     $this->news->file_size = $fileSize;

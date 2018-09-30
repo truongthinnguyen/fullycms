@@ -17,9 +17,6 @@
             <div class="col-sm-6">
                 <h1>{!! $photo_gallery->title !!}</h1>
             </div>
-            <div class="col-sm-6">
-                @yield('partial/breadcrumbs', Breadcrumbs::render('photo_gallery.show', $photo_gallery))
-            </div>
         </div>
     </div>
 </section><!--/#title-->
@@ -29,11 +26,8 @@
     {!! $photo_gallery->content !!}
 
     <br>
-    <br>
-    <br>
-
+    
     @if($photo_gallery->photos->count())
-
 
     @foreach($photo_gallery->photos as $photo)
     <a rel="group" class="fancybox" href="{!! url($photo->path) !!}" title="{!! $photo->title !!}">
