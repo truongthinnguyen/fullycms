@@ -902,6 +902,11 @@ section {
     margin-bottom   : 15px;
 }
 
+.category_article_image,
+.top_article_img img{
+    max-width: 100%;
+}
+
 .category_article_wrapper .media-heading {
     margin-top      : 5px;
 }

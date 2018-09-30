@@ -135,8 +135,7 @@
                                     
                                     <!-- article_date -->
                                     <div class="category_article_content">
-                                        Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
-                                        procrastinate B2C users after.
+                                        {!! mb_substr(strip_tags($project->description),0,200) !!}...
                                     </div>
                                     <!-- category_article_content -->
                                 
