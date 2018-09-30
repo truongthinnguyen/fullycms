@@ -15,7 +15,7 @@
                     </div>
                     <!-- entity_title -->
                     <div class="entity_meta">
-                        <a href="#">10Aug- 2015</a>
+                        <a href="#">{!! $project->created_at !!}</a>
                     </div>
                     <!-- entity_meta -->
                     
@@ -28,12 +28,7 @@
                     </div>
                     <!-- entity_thumb -->
                     <div class="entity_content">
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-                            will give you a complete account of the system, and expound the actual teachings of the great explorer of
-                            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
-                            because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter
-                            consequences that are extremely painful. 
-                        </p>
+                        {!! mb_substr(strip_tags($project->description),0,500) !!}...
                     </div>
                     <!-- entity_content -->
                 </div>
