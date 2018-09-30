@@ -132,4 +132,19 @@ class CacheDecorator extends AbstractNewsDecorator
 
         return $news;
     }
+
+    public function getHotNews($limit)
+    {
+        $key = md5(getLang().$limit.$this->cacheKey.'.hot');
+
+        if ($this->cache->has($key)) {
+            return $this->cache->get($key);
+        }
+
+        $news = $this->news->getHotNews($limit);
+
+        $this->cache->put($key, $news);
+
+        return $news;
+    }
 }

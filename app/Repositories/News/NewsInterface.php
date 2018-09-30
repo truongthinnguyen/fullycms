@@ -17,4 +17,18 @@ interface NewsInterface extends RepositoryInterface
      * @return mixed
      */
     public function getBySlug($slug);
+
+    /**
+     * @param $limit
+     *
+     * @return mixed
+     */
+    public function getLastNews($limit);
+
+    /**
+     * @param $limit
+     *
+     * @return mixed
+     */
+    public function getHotNews($limit);
 }

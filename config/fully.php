@@ -6,7 +6,7 @@ return [
 
     'per_page' => 10,
 
-    'youtube_api_key' => 'youtube api key',
+    'youtube_api_key' => 'AIzaSyD3n-SzhSSeIdfPWToFDvFKTa6w4jbqqew',
 
     /*
     |--------------------------------------------------------------------------

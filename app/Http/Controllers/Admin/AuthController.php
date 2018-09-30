@@ -55,15 +55,16 @@ class AuthController extends Controller
         );
 
         
-        #$user = Sentinel::findById(3);
+        #$user = Sentinel::findById(1);
         #$Activation = Sentinel::getActivationRepository();
         #$activation = $Activation->create($user);
-        #dd($activation);
-        #$Activation->complete($user, 'nCySguayVCdbwSCg2K5E8dRrltxyTVmL');
+        #$Activation->complete($user, '9oSFtNl1NgMBhUKLzU5nyJCqOENk68ha');
         
+        #dd($user);
         $rememberMe = $request->get('rememberMe');
 
         try {
+            
             if (!empty($rememberMe)) {
                 $result = Sentinel::authenticateAndRemember($credentials);
             } else {

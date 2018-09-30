@@ -40,8 +40,9 @@ class NewsController extends Controller
     {
         $pagiData = $this->news->paginate($request->get('page', 1), $this->perPage, false);
         $news = Pagination::makeLengthAware($pagiData->items, $pagiData->totalItems, $this->perPage);
+        $latestnews = $this->news->getLastNews(5);
 
-        return view('frontend.news.index', compact('news'));
+        return view('frontend.news.index', compact('news', 'latestnews'));
     }
 
     /**
@@ -56,6 +57,7 @@ class NewsController extends Controller
             return Response::view('errors.missing', [], 404);
         }
 
-        return view('frontend.news.show', compact('news'));
+        $latestnews = $this->news->getLastNews(5);
+        return view('frontend.news.show', compact('news' ,'latestnews'));
     }
 }

@@ -20,7 +20,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ),
             array(
@@ -30,7 +31,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ),
             array(
@@ -40,7 +42,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ),
             array(
@@ -50,7 +53,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ),
             array(
@@ -60,7 +64,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ),
             array(
@@ -70,7 +75,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ),
             array(
@@ -80,7 +86,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ),
             array(
@@ -90,7 +97,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ),
             array(
@@ -100,7 +108,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ),
             array(
@@ -110,7 +119,8 @@ class ProjectsTableSeeder extends Seeder
                 'path' => '',
                 'file_name' => '',
                 'file_size' => 0,
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(), ), ));
     }

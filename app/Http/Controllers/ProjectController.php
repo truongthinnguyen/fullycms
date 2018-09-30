@@ -3,6 +3,7 @@
 namespace Fully\Http\Controllers;
 
 use Fully\Repositories\Project\ProjectInterface;
+use Fully\Repositories\News\NewsInterface;
 
 /**
  * Class ProjectController.
@@ -13,12 +14,15 @@ class ProjectController extends Controller
 {
     protected $project;
 
+    protected $news;
+
     /**
      * @param ProjectInterface $project
      */
-    public function __construct(ProjectInterface $project)
+    public function __construct(ProjectInterface $project, NewsInterface $news)
     {
         $this->project = $project;
+        $this->news = $news;
     }
 
     /**
@@ -27,8 +31,9 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = $this->project->all();
+        $latestnews = $this->news->getLastNews(5);
 
-        return view('frontend.project.index', compact('projects'));
+        return view('frontend.project.index', compact('projects', 'latestnews'));
     }
 
     /**
@@ -45,7 +50,8 @@ class ProjectController extends Controller
         if ($project == null) {
             return Response::view('errors.missing', array(), 404);
         }
+        $latestnews = $this->news->getLastNews(5);
 
-        return view('frontend.project.show', compact('project'));
+        return view('frontend.project.show', compact('project', 'latestnews'));
     }
 }

@@ -29,7 +29,7 @@
                 </div>
                 <!-- entity_title -->
                 <div class="entity_meta">
-                    <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+                    <a href="#">10Aug- 2015</a>
                 </div>
                 <!-- entity_meta -->
                 <div class="entity_content">
@@ -62,7 +62,7 @@
                         </div>
                         <!-- category_article_title -->
                         <div class="article_date">
-                            <a href="#">{!! $v->created_at !!}</a>, by: <a href="#">Eric joan</a>
+                            <a href="#">{!! $v->created_at !!}</a>
                         </div>
                         <!-- article_date -->
                         <div class="category_article_content">

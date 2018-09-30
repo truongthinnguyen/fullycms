@@ -17,4 +17,11 @@ interface ProjectInterface extends RepositoryInterface
      * @return mixed
      */
     public function getBySlug($slug);
+
+    /**
+     * @param $limit
+     *
+     * @return mixed
+     */
+    public function getLastProjects($limit);
 }

@@ -266,4 +266,14 @@ class ProjectRepository extends RepositoryAbstract implements ProjectInterface, 
     {
         return $this->project->where('lang', $this->getLang())->count();
     }
+
+    /**
+     * @param $limit
+     *
+     * @return mixed
+     */
+    public function getLastProjects($limit)
+    {   
+        return $this->project->orderBy('created_at', 'desc')->where('lang', $this->getLang())->take($limit)->offset(0)->get();
+    }
 }

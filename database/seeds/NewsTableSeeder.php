@@ -20,7 +20,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Nunc pulvinar ligula vel justo tincidunt',
@@ -29,7 +31,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Pellentesque pulvinar dictum condimentum',
@@ -38,7 +42,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Nunc rhoncus nulla facilisis turpis tristique egestas',
@@ -47,7 +53,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Donec ut tempor risus',
@@ -56,7 +64,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Mauris in purus erat',
@@ -65,7 +75,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Vestibulum quam sem',
@@ -74,7 +86,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'In leo dui, rutrum pellentesque',
@@ -83,7 +97,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Class aptent taciti sociosqu ad litora',
@@ -92,7 +108,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Aliquam sodales lacus varius, convallis odio id',
@@ -101,7 +119,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Curabitur placerat pharetra metus eu bibendum',
@@ -110,7 +130,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Quisque et convallis nulla',
@@ -119,7 +141,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Vivamus blandit nisi pellentesque',
@@ -128,7 +152,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Pellentesque id leo neque',
@@ -137,7 +163,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Sed id metus a ipsum bibendum sagittis',
@@ -146,7 +174,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Maecenas dictum nulla turpis',
@@ -155,7 +185,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'In ultricies in tortor sed pellentesque',
@@ -164,7 +196,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'In hac habitasse platea dictumst',
@@ -173,7 +207,9 @@ class NewsTableSeeder extends Seeder
                 'datetime' => new DateTime(),
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
-                'lang' => 'tr',
+                'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
             array(
                 'title' => 'Nullam sodales, purus quis pulvinar dapibus',
@@ -183,6 +219,8 @@ class NewsTableSeeder extends Seeder
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
                 'lang' => 'en',
+                'is_hot' => false,
+                'number_of_viewed' => 0
             ),
         ));
     }

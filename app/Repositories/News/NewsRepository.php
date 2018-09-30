@@ -158,6 +158,7 @@ class NewsRepository extends RepositoryAbstract implements NewsInterface, Crudab
     public function create($attributes)
     {
         $attributes['is_published'] = isset($attributes['is_published']) ? true : false;
+        $attributes['is_hot'] = isset($attributes['is_hot']) ? true : false;
 
         if ($this->isValid($attributes)) {
 
@@ -301,5 +302,15 @@ class NewsRepository extends RepositoryAbstract implements NewsInterface, Crudab
     public function getLastNews($limit)
     {
         return $this->news->orderBy('created_at', 'desc')->where('lang', $this->getLang())->take($limit)->offset(0)->get();
+    }
+
+    /**
+     * @param $limit
+     *
+     * @return mixed
+     */
+    public function getHotNews($limit)
+    {
+        return $this->news->orderBy('created_at', 'desc')->where('lang', $this->getLang())->where('is_hot', true)->take($limit)->offset(0)->get();
     }
 }

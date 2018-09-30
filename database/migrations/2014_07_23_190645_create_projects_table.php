@@ -16,6 +16,7 @@ class CreateProjectsTable extends Migration
             $table->text('description');
             $table->string('slug')->nullable();
             $table->string('path', 255);
+            $table->boolean('is_hot')->default(false);
             $table->string('file_name', 255);
             $table->integer('file_size');
             $table->string('lang', 20);
@@ -28,6 +29,6 @@ class CreateProjectsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('faqs');
+        Schema::drop('projects');
     }
 }

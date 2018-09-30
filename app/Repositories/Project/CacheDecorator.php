@@ -121,4 +121,25 @@ class CacheDecorator extends AbstractProjectDecorator
     public function findByTag($tag)
     {
     }
+
+
+    /**
+     * @param $limit
+     *
+     * @return mixed
+     */
+    public function getLastProjects($limit)
+    {
+        $key = md5(getLang().$limit.$this->cacheKey.'.last');
+
+        if ($this->cache->has($key)) {
+            return $this->cache->get($key);
+        }
+
+        $projects = $this->project->getLastProjects($limit);
+
+        $this->cache->put($key, $projects);
+
+        return $projects;
+    }
 }

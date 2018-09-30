@@ -18,6 +18,8 @@ class CreateNewsTable extends Migration
             $table->date('datetime');
             $table->timestamps();
             $table->boolean('is_published')->default(true);
+            $table->boolean('is_hot')->default(false);
+            $table->integer('number_of_viewed')->default(0);
             $table->string('path', 255)->nullable();
             $table->string('file_name', 255)->nullable();
             $table->integer('file_size')->nullable();

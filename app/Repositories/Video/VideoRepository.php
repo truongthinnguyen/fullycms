@@ -95,12 +95,14 @@ class VideoRepository extends RepositoryAbstract implements VideoInterface, Crud
         $result->totalItems = $this->totalVideos();
         $result->items = $videos->all();
 
+
         if (!$notLazy) {
             // set video details
             foreach ($result->items as $k => $v) {
                 $v->setDetailsAttribute($this->getDetails($v['attributes']['type'], $v['attributes']['video_id']));
             }
         }
+
 
         return $result;
     }
