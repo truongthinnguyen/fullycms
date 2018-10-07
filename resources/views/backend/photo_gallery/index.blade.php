@@ -29,12 +29,11 @@
     });
 </script>
 <section class="content-header">
-    <h1> Photo Gallery
-        <small> | Control Panel</small>
+    <h1> Thư viện
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li class="active">Photo Gallery</li>
+        <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Bảng điều khiển</a></li>
+        <li class="active">Hình ảnh</li>
     </ol>
 </section>
 <br><br>
@@ -46,7 +45,7 @@
 
         <div class="pull-left">
             <div class="btn-toolbar"><a href="{!! langRoute('admin.photo-gallery.create') !!}" class="btn btn-primary">
-                    <span class="glyphicon glyphicon-plus"></span>&nbsp;Add Photo Gallery </a></div>
+                    <span class="glyphicon glyphicon-plus"></span>&nbsp;Thêm thư viện hình ảnh </a></div>
         </div>
         <br>
         <br>
@@ -56,11 +55,11 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Title</th>
-                    <th>Created Date</th>
-                    <th>Updated Date</th>
-                    <th>Action</th>
-                    <th>Settings</th>
+                    <th>Tiêu đề</th>
+                    <th>Ngày tạo</th>
+                    <th>Ngày cập nhật</th>
+                    <th>Hành động</th>
+                    <th>Cài đặt</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -72,30 +71,30 @@
                     <td>
                         <div class="btn-group">
                             <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">
-                                Action
+                                Hành động
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="{!! langRoute('admin.photo-gallery.show', array($photo_gallery->id)) !!}">
-                                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Show Photo Gallery
+                                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Xem hình ảnh
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{!! langRoute('admin.photo-gallery.edit', array($photo_gallery->id)) !!}">
-                                        <span class="glyphicon glyphicon-edit"></span>&nbsp;Edit Photo Gallery
+                                        <span class="glyphicon glyphicon-edit"></span>&nbsp;Chỉnh sửa
                                     </a>
                                 </li>
                                 <li class="divider"></li>
                                 <li>
                                     <a href="{!! URL::route('admin.photo-gallery.delete', array($photo_gallery->id)) !!}">
-                                        <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;Delete Photo Gallery
+                                        <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;Xóa hình ảnh
                                     </a>
                                 </li>
                                 <li class="divider"></li>
                                 <li>
                                     <a target="_blank" href="{!! URL::route('dashboard.photo_gallery.show', ['slug' => $photo_gallery->slug]) !!}">
-                                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;View On Site
+                                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Xem trước
                                     </a>
                                 </li>
                             </ul>
@@ -110,7 +109,7 @@
             </table>
         </div>
         @else
-        <div class="alert alert-danger">No results found</div>
+        <div class="alert alert-danger"</i> Chưa có kết quả nào</a>/div>
         @endif
     </div>
 

@@ -57,7 +57,7 @@
             {!! $menus !!}
         </div>
         @if($menus === null)
-            <div class="alert alert-danger">No results found</div>
+            <div class="alert alert-danger"</i> Chưa có kết quả nào</a>/div>
         @endif
     </div>
 

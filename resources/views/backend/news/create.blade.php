@@ -28,10 +28,10 @@
 
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> News <small> | Add News</small> </h1>
+        <h1> Tin tức <small> | Thêm tin tức</small> </h1>
         <ol class="breadcrumb">
-            <li><a href="{!! url(getLang() . '/admin/news') !!}"><i class="fa fa-bookmark"></i> News</a></li>
-            <li class="active">Add News</li>
+            <li><a href="{!! url(getLang() . '/admin/news') !!}"><i class="fa fa-bookmark"></i> Tin tức</a></li>
+            <li class="active">Thêm tin tức</li>
         </ol>
     </section>
     <br>
@@ -40,7 +40,7 @@
         {!! Form::open(array('action' => '\Fully\Http\Controllers\Admin\NewsController@store', 'files'=>true)) !!}
         <!-- Title -->
         <div class="control-group {!! $errors->has('title') ? 'has-error' : '' !!}">
-            <label class="control-label" for="title">Title</label>
+            <label class="control-label" for="title">Tiêu đề</label>
 
             <div class="controls"> {!! Form::text('title', null, array('class'=>'form-control', 'id' => 'title',
                 'placeholder'=>'Title', 'value'=>Input::old('title'))) !!}
@@ -50,7 +50,7 @@
         <br>
         <!-- Datetime -->
         <div class="control-group {!! $errors->has('datetime') ? 'has-error' : '' !!}">
-            <label class="control-label" for="title">Datetime</label>
+            <label class="control-label" for="title">Ngày giờ</label>
 
             <div class="controls"> {!! Form::text('datetime', null, array('class'=>'form-control', 'id' => 'datetime',
                 'value'=>Input::old('datetime'))) !!}
@@ -60,7 +60,7 @@
         <br>
         <!-- Content -->
         <div class="control-group {!! $errors->has('content') ? 'has-error' : '' !!}">
-            <label class="control-label" for="title">Content</label>
+            <label class="control-label" for="title">Nội dung</label>
 
             <div class="controls"> {!! Form::textarea('content', null, array('class'=>'form-control', 'id' => 'content',
                 'placeholder'=>'Content', 'value'=>Input::old('content'))) !!}
@@ -71,22 +71,22 @@
         <!-- Image -->
         <div class="fileinput fileinput-new control-group {!! $errors->has('image') ? 'has-error' : '' !!}" data-provides="fileinput">
             <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
-            <div> <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span> {!! Form::file('image', null, array('class'=>'form-control', 'id' => 'image', 'placeholder'=>'Image', 'value'=>Input::old('image'))) !!}
+            <div> <span class="btn btn-default btn-file"><span class="fileinput-new">Chọn hình ảnh</span><span class="fileinput-exists">Thay đổi</span> {!! Form::file('image', null, array('class'=>'form-control', 'id' => 'image', 'placeholder'=>'Hình ảnh', 'value'=>Input::old('image'))) !!}
                     @if ($errors->first('image')) <span class="help-block">{!! $errors->first('image') !!}</span> @endif </span>
-                <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a></div>
+                <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Xóa hình ảnh</a></div>
         </div>
         <br>
         <!-- Published -->
         <div class="control-group {!! $errors->has('is_hot') ? 'has-error' : '' !!}">
             <div class="controls">
-                <label class="">{!! Form::checkbox('is_hot', 'is_hot') !!} Is Hot ?</label>
+                <label class="">{!! Form::checkbox('is_hot', 'is_hot') !!} Tin hot ?</label>
                 @if ($errors->first('is_hot'))
                     <span class="help-block">{!! $errors->first('is_hot') !!}</span> @endif </div>
         </div>
         <!-- Published -->
         <div class="control-group {!! $errors->has('is_published') ? 'has-error' : '' !!}">
             <div class="controls">
-                <label class="">{!! Form::checkbox('is_published', 'is_published') !!} Publish ?</label>
+                <label class="">{!! Form::checkbox('is_published', 'is_published') !!} Xuất bản ?</label>
                 @if ($errors->first('is_published'))
                     <span class="help-block">{!! $errors->first('is_published') !!}</span> @endif </div>
         </div>

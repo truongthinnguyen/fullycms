@@ -25,19 +25,19 @@
         <table class="table table-striped">
             <tbody>
             <tr>
-                <td><strong>Title</strong></td>
+                <td><strong>Tiêu đề</strong></td>
                 <td>{!! $project->title !!}</td>
             </tr>
             <tr>
-                <td><strong>Description</strong></td>
+                <td><strong>Mô tả</strong></td>
                 <td>{!! $project->description !!}</td>
             </tr>
             <tr>
-                <td><strong>Date Created</strong></td>
+                <td><strong>Ngày tạo</strong></td>
                 <td>{!! $project->created_at !!}</td>
             </tr>
             <tr>
-                <td><strong>Date Updated</strong></td>
+                <td><strong>Ngày cập nhật</strong></td>
                 <td>{!! $project->updated_at !!}</td>
             </tr>
             </tbody>

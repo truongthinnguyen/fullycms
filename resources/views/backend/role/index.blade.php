@@ -6,12 +6,12 @@
         });
     </script>
     <section class="content-header">
-        <h1> Role
-            <small> | Control Panel</small>
+        <h1> Quyền hạn
+            
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{!! url(getLang(). '/admin/role') !!}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active">Role</li>
+            <li><a href="{!! url(getLang(). '/admin/role') !!}"><i class="fa fa-dashboard"></i> Bảng điều khiển</a></li>
+            <li class="active">Quyền hạn</li>
         </ol>
     </section>
     <br>
@@ -23,7 +23,7 @@
             <div class="pull-left">
                 <div class="btn-toolbar">
                     <a href="{!! langRoute('admin.role.create') !!}" class="btn btn-primary">
-                        <span class="glyphicon glyphicon-plus"></span>&nbsp;New Role </a>
+                        <span class="glyphicon glyphicon-plus"></span>&nbsp;Tạo quyền hạn </a>
                 </div>
             </div>
             <br> <br> <br>
@@ -32,8 +32,8 @@
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Action</th>
+                            <th>Tên</th>
+                            <th>Hành động</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -44,22 +44,21 @@
                                 <td>
                                     <div class="btn-group">
                                         <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">
-                                            Action <span class="caret"></span> </a>
+                                            Hành động <span class="caret"></span> </a>
                                         <ul class="dropdown-menu">
                                             <li>
                                                 <a href="{!! langRoute('admin.role.show', array($role->id)) !!}">
-                                                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Show User
+                                                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Xem tài khoản
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="{!! langRoute('admin.role.edit', array($role->id)) !!}">
-                                                    <span class="glyphicon glyphicon-edit"></span>&nbsp;Edit Role </a>
+                                                    <span class="glyphicon glyphicon-edit"></span>&nbsp;Chỉnh sửa </a>
                                             </li>
                                             <li class="divider"></li>
                                             <li>
                                                 <a href="{!! URL::route('admin.role.delete', array($role->id)) !!}">
-                                                    <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;Delete
-                                                    Role </a>
+                                                    <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;Xóa quyền hạn</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -70,7 +69,7 @@
                     </table>
                 </div>
             @else
-                <div class="alert alert-danger">No results found</div>
+                <div class="alert alert-danger"</i> Chưa có kết quả nào</a>/div>
             @endif
         </div>
         <div class="pull-left">

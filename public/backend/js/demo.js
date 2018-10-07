@@ -1,7 +1,7 @@
 var my_skins = ["skin-blue", "skin-black", "skin-red", "skin-yellow", "skin-purple", "skin-green"];
 $(function () {
   /* For demo purposes */
-  var demo = $("<div />").css({
+  /*var demo = $("<div />").css({
     position: "fixed",
     top: "70px",
     right: "0",
@@ -124,7 +124,7 @@ $(function () {
   $("body").append(demo);
   $("body").append(demo_settings);
 
-  setup();
+  setup();*/
 });
 
 function change_layout(cls) {

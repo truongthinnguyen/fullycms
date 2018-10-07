@@ -3,12 +3,12 @@
 
 <!-- Content Header (Page header) -->
 <section class="content-header">
-    <h1> Role
-        <small> | Add Role</small>
+    <h1> Quyền hạn
+        <small> | Thêm quyền hạn</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{!! url(getLang(). '/admin/role') !!}"><i class="fa fa-user"></i> Role</a></li>
-        <li class="active">Add User</li>
+        <li><a href="{!! url(getLang(). '/admin/role') !!}"><i class="fa fa-user"></i> Quyền hạn</a></li>
+        <li class="active">Thêm tài khoản</li>
     </ol>
 </section>
 <br>
@@ -18,10 +18,10 @@
 
     <!-- Role Name -->
     <div class="control-group {!! $errors->has('name') ? 'has-error' : '' !!}">
-        <label class="control-label" for="name">Name</label>
+        <label class="control-label" for="name">Tên</label>
 
         <div class="controls">
-            {!! Form::text('name', null, array('class'=>'form-control', 'id' => 'name', 'placeholder'=>'Role Name', 'value'=>Input::old('name'))) !!}
+            {!! Form::text('name', null, array('class'=>'form-control', 'id' => 'name', 'placeholder'=>'Tên quyền hạn', 'value'=>Input::old('name'))) !!}
             @if ($errors->first('name'))
             <span class="help-block">{!! $errors->first('name') !!}</span>
             @endif
@@ -32,7 +32,7 @@
     <div class="checkbox">
         <input type="hidden" value="0" name="permissions[admin.dashboard]">
         <label>
-            <input type="checkbox" value="1" name="permissions[admin.dashboard]"> Dashboard
+            <input type="checkbox" value="1" name="permissions[admin.dashboard]"> Bảng điều khiển
         </label>
     </div>
     <hr>
@@ -99,10 +99,10 @@
         </table>
     </div>
     <!-- Form actions -->
-    {!! Form::submit('Save Changes', array('class' => 'btn btn-success')) !!}
+    {!! Form::submit('Lưu lại', array('class' => 'btn btn-success')) !!}
     <a href="{!! langUrl('/admin/role') !!}"
        class="btn btn-default">
-        &nbsp;Cancel
+        &nbsp;Hủy bỏ
     </a>
     {!! Form::close() !!}
 </div>

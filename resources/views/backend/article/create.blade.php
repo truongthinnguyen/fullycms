@@ -28,7 +28,7 @@
 
     <!-- Title -->
     <div class="control-group {!! $errors->has('title') ? 'has-error' : '' !!}">
-        <label class="control-label" for="title">Title</label>
+        <label class="control-label" for="title">Tiêu đề</label>
 
         <div class="controls">
             {!! Form::text('title', null, array('class'=>'form-control', 'id' => 'title', 'placeholder'=>'Title', 'value'=>Input::old('title'))) !!}
@@ -67,7 +67,7 @@
 
     <!-- Content -->
     <div class="control-group {!! $errors->has('content') ? 'has-error' : '' !!}">
-        <label class="control-label" for="title">Content</label>
+        <label class="control-label" for="title">Nội dung</label>
 
         <div class="controls">
             {!! Form::textarea('content', null, array('class'=>'form-control', 'id' => 'content', 'placeholder'=>'Content', 'value'=>Input::old('content'))) !!}
@@ -125,8 +125,8 @@
     <!-- Image -->
     <div class="fileinput fileinput-new control-group {!! $errors->has('image') ? 'has-error' : '' !!}" data-provides="fileinput">
         <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
-        <div> <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span> {!! Form::file('image', null, array('class'=>'form-control', 'id' => 'image', 'placeholder'=>'Image', 'value'=>Input::old('image'))) !!}
-      @if ($errors->first('image')) <span class="help-block">{!! $errors->first('image') !!}</span> @endif </span> <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a> </div>
+        <div> <span class="btn btn-default btn-file"><span class="fileinput-new">Chọn hình ảnh</span><span class="fileinput-exists">Thay đổi</span> {!! Form::file('image', null, array('class'=>'form-control', 'id' => 'image', 'placeholder'=>'Image', 'value'=>Input::old('image'))) !!}
+      @if ($errors->first('image')) <span class="help-block">{!! $errors->first('image') !!}</span> @endif </span> <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Xóa</a> </div>
     </div>
     <br>
 

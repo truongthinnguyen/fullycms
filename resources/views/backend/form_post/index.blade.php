@@ -29,10 +29,10 @@
 </script>
 <section class="content-header">
     <h1> Form Post
-        <small> | Control Panel</small>
+        
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Bảng điều khiển</a></li>
         <li class="active">Form Post</li>
     </ol>
 </section>
@@ -50,8 +50,8 @@
                 <th>Email</th>
                 <th>Phone Number</th>
                 <th>Subject</th>
-                <th>Action</th>
-                <th>Settings</th>
+                <th>Hành động</th>
+                <th>Cài đặt</th>
             </tr>
             </thead>
             <tbody>
@@ -92,7 +92,7 @@
             </tbody>
         </table>
         @else
-        <div class="alert alert-danger">No results found</div>
+        <div class="alert alert-danger"</i> Chưa có kết quả nào</a>/div>
         @endif
     </div>
     <div class="pull-left">

@@ -17,7 +17,7 @@
     {!! Form::open( array( 'route' => array(getLang(). '.admin.user.update', $user->id), 'method' => 'PATCH')) !!}
     <!-- First Name -->
     <div class="control-group {!! $errors->has('first-name') ? 'has-error' : '' !!}">
-        <label class="control-label" for="first-name">First Name</label>
+        <label class="control-label" for="first-name">Họ</label>
 
         <div class="controls">
             {!! Form::text('first_name', $user->first_name, array('class'=>'form-control', 'id' => 'first_name', 'placeholder'=>'First Name', 'value'=>Input::old('first_name'))) !!}
@@ -29,7 +29,7 @@
     <br>
     <!-- Last Name -->
     <div class="control-group {!! $errors->has('last-name') ? 'has-error' : '' !!}">
-        <label class="control-label" for="last-name">Last Name</label>
+        <label class="control-label" for="last-name">Tên</label>
 
         <div class="controls">
             {!! Form::text('last_name', $user->last_name, array('class'=>'form-control', 'id' => 'last_name', 'placeholder'=>'Last Name', 'value'=>Input::old('last_name'))) !!}
@@ -54,7 +54,7 @@
 
     <!-- Role -->
     <div class="control-group {!! $errors->has('is_published') ? 'has-error' : '' !!}">
-        <label class="control-label" for="groups">Roles</label>
+        <label class="control-label" for="groups">Quyền hạn</label>
         <div class="controls">
 
             @foreach($roles as $id=>$role)
@@ -66,10 +66,10 @@
     <br>
 
     <!-- Form actions -->
-    {!! Form::submit('Save Changes', array('class' => 'btn btn-success')) !!}
+    {!! Form::submit('Lưu thông tin', array('class' => 'btn btn-success')) !!}
     <a href="{!! url(getLang() . '/admin/user') !!}"
        class="btn btn-default">
-        &nbsp;Cancel
+        &nbsp;Hủy
     </a>
     {!! Form::close() !!}
 </div>

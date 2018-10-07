@@ -2,12 +2,12 @@
 @section('content')
 <!-- Content Header (Page header) -->
 <section class="content-header">
-    <h1> Role
-        <small> | Update Role</small>
+    <h1> Quyền hạn
+        <small> | Cập nhật quyền hạn</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{!! url(getLang(). '/admin/role') !!}"><i class="fa fa-user"></i> Role</a></li>
-        <li class="active">Update Role</li>
+        <li><a href="{!! url(getLang(). '/admin/role') !!}"><i class="fa fa-user"></i> Quyền hạn</a></li>
+        <li class="active">Cập nhật quyền hạn</li>
     </ol>
 </section>
 <br>
@@ -16,10 +16,10 @@
     {!! Form::open( array( 'route' => array(getLang(). '.admin.role.update', $role->id), 'method' => 'PATCH')) !!}
     <!-- Role Name -->
     <div class="control-group {!! $errors->has('name') ? 'has-error' : '' !!}">
-        <label class="control-label" for="name">Name</label>
+        <label class="control-label" for="name">Tên</label>
 
         <div class="controls">
-            {!! Form::text('name', $role->name, array('class'=>'form-control', 'id' => 'name', 'placeholder'=>'Role Name', 'value'=>Input::old('name'))) !!}
+            {!! Form::text('name', $role->name, array('class'=>'form-control', 'id' => 'name', 'placeholder'=>'Tên quyền hạn', 'value'=>Input::old('name'))) !!}
             @if ($errors->first('name'))
             <span class="help-block">{!! $errors->first('name') !!}</span>
             @endif
@@ -117,10 +117,10 @@
     </div>
 
     <!-- Form actions -->
-    {!! Form::submit('Save Changes', array('class' => 'btn btn-success')) !!}
+    {!! Form::submit('Lưu lại', array('class' => 'btn btn-success')) !!}
     <a href="{!! langUrl('/admin/role') !!}"
        class="btn btn-default">
-        &nbsp;Cancel
+        &nbsp;Hủy
     </a>
     {!! Form::close() !!}
 </div>

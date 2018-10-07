@@ -6,12 +6,12 @@
     });
 </script>
 <section class="content-header">
-    <h1> User
-        <small> | Control Panel</small>
+    <h1> Tài khoản
+        
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{!! url(getLang(). '/admin/user') !!}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li class="active">User</li>
+        <li><a href="{!! url(getLang(). '/admin/user') !!}"><i class="fa fa-dashboard"></i> Bảng điều khiển</a></li>
+        <li class="active">Tài khoản</li>
     </ol>
 </section>
 <br>
@@ -23,7 +23,7 @@
         <div class="pull-left">
             <div class="btn-toolbar">
                 <a href="{!! langRoute('admin.user.create') !!}" class="btn btn-primary">
-                    <span class="glyphicon glyphicon-plus"></span>&nbsp;New User
+                    <span class="glyphicon glyphicon-plus"></span>&nbsp;Tạo tài khoản
                 </a>
             </div>
         </div>
@@ -35,11 +35,11 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Name</th>
+                    <th>Họ và tên</th>
                     <th>Email</th>
-                    <th>Joined</th>
-                    <th>Last Login</th>
-                    <th>Action</th>
+                    <th>Ngày đăng ký</th>
+                    <th>Lần đăng nhập cuối</th>
+                    <th>Hành động</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -52,24 +52,24 @@
                     <td>
                         <div class="btn-group">
                             <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">
-                                Action
+                                Hành động
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="{!! langRoute('admin.user.show', array($user->id)) !!}">
-                                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Show User
+                                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Xem tài khoản
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{!! langRoute('admin.user.edit', array($user->id)) !!}">
-                                        <span class="glyphicon glyphicon-edit"></span>&nbsp;Edit User
+                                        <span class="glyphicon glyphicon-edit"></span>&nbsp;Cập nhật thông tin
                                     </a>
                                 </li>
                                 <li class="divider"></li>
                                 <li>
                                     <a href="{!! URL::route('admin.user.delete', array($user->id)) !!}">
-                                        <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;Delete User
+                                        <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;Xóa tài khoản
                                     </a>
                                 </li>
                             </ul>
@@ -81,7 +81,7 @@
             </table>
         </div>
         @else
-        <div class="alert alert-danger">No results found</div>
+        <div class="alert alert-danger"</i> Chưa có kết quả nào</a>/div>
         @endif
     </div>
     <div class="pull-left">

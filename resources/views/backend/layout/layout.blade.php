@@ -71,7 +71,7 @@
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
 
-                    <li class="dropdown messages-menu">
+                    <!-- <li class="dropdown messages-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                             <img alt="" src="img/flags/us.png">
                             <span class="username">{{ LaravelLocalization::getCurrentLocaleName() }}</span>
@@ -85,14 +85,14 @@
                                 </li>
                             @endforeach
                         </ul>
-                    </li>
+                    </li> -->
 
                     <!-- Notifications: style can be found in dropdown.less -->
                     <li class="dropdown notifications-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell-o"></i>
                             <span class="label label-warning">{{ $formPost->count() }}</span> </a>
                         <ul class="dropdown-menu">
-                            <li class="header">You have {{ $formPost->count() }} notifications</li>
+                            <li class="header">Bạn có {{ $formPost->count() }} tin nhắn</li>
                             <li>
                                 <!-- inner menu: contains the actual data -->
                                 <ul class="menu">
@@ -105,7 +105,7 @@
                                     @endforeach
                                 </ul>
                             </li>
-                            <li class="footer"><a href="{{ url(getLang() . '/admin/form-post') }}">See All Messages</a></li>
+                            <li class="footer"><a href="{{ url(getLang() . '/admin/form-post') }}">Xem tất cả</a></li>
                         </ul>
                     </li>
 
@@ -120,8 +120,7 @@
                                 <img src="{{ gravatarUrl(Sentinel::getUser()->email) }}" class="img-circle" alt="User Image"/>
 
                                 <p>
-                                <p> {{ Sentinel::getUser()->first_name . ' ' . Sentinel::getUser()->last_name }} - Web Developer
-                                    <small>Member since Nov. 2012</small>
+                                <p> {{ Sentinel::getUser()->first_name . ' ' . Sentinel::getUser()->last_name }}
                                 </p>
                             </li>
                             <!-- Menu Body -->
@@ -139,10 +138,10 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="{{ url(getLang() . '/admin/user/' . Sentinel::getUser()->id) }}" class="btn btn-default btn-flat">Profile</a>
+                                    <a href="{{ url(getLang() . '/admin/user/' . Sentinel::getUser()->id) }}" class="btn btn-default btn-flat">Cá nhân</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="{{ url('/admin/logout') }}" class="btn btn-default btn-flat">Sign out</a></div>
+                                    <a href="{{ url('/admin/logout') }}" class="btn btn-default btn-flat">Thoát</a></div>
 
                             </li>
                         </ul>

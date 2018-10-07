@@ -15,7 +15,7 @@
     {!! Form::open( array( 'route' => array( getLang() . '.admin.page.update', $page->id), 'method' => 'PATCH', 'files'=>true)) !!}
     <!-- Title -->
     <div class="control-group {!! $errors->has('title') ? 'has-error' : '' !!}">
-        <label class="control-label" for="title">Title</label>
+        <label class="control-label" for="title">Tiêu đề</label>
 
         <div class="controls">
             {!! Form::text('title', $page->title, array('class'=>'form-control', 'id' => 'title', 'placeholder'=>'Title', 'value'=>Input::old('title'))) !!}
@@ -27,7 +27,7 @@
     <br>
     <!-- Content -->
     <div class="control-group {!! $errors->has('content') ? 'has-error' : '' !!}">
-        <label class="control-label" for="title">Content</label>
+        <label class="control-label" for="title">Nội dung</label>
 
         <div class="controls">
             {!! Form::textarea('content', $page->content, array('class'=>'form-control', 'id' => 'content', 'placeholder'=>'Content', 'value'=>Input::old('content'))) !!}

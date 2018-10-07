@@ -7,10 +7,10 @@
 </script>
 <section class="content-header">
     <h1> Faq
-        <small> | Control Panel</small>
+        
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Bảng điều khiển</a></li>
         <li class="active">Faq</li>
     </ol>
 </section>
@@ -33,7 +33,7 @@
                 <thead>
                 <tr>
                     <th>Question</th>
-                    <th>Action</th>
+                    <th>Hành động</th>
                 </tr>
                 </thead>
                 <tbody>

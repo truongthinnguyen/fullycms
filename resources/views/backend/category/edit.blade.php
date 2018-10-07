@@ -17,7 +17,7 @@
     {!! Form::open( array( 'route' => array( getLang() . '.admin.category.update', $category->id), 'method' => 'PATCH')) !!}
     <!-- Title -->
     <div class="control-group {!! $errors->has('title') ? 'has-error' : '' !!}">
-        <label class="control-label" for="first-name">Title</label>
+        <label class="control-label" for="first-name">Tiêu đề</label>
 
         <div class="controls">
             {!! Form::text('title', $category->title, array('class'=>'form-control', 'id' => 'title', 'placeholder'=>'Title', 'value'=>Input::old('title'))) !!}

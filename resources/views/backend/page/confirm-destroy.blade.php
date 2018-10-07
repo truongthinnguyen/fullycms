@@ -3,7 +3,7 @@
 <section class="content-header">
     <h1> Page <small> | Delete Page</small> </h1>
     <ol class="breadcrumb">
-        <li><a href="{!! langRoute('admin.page.index') !!}"><i class="fa fa-bookmark"></i> Dashboard</a></li>
+        <li><a href="{!! langRoute('admin.page.index') !!}"><i class="fa fa-bookmark"></i> Bảng điều khiển</a></li>
         <li class="active">Delete Page</li>
     </ol>
 </section>

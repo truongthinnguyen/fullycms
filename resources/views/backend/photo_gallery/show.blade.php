@@ -11,13 +11,13 @@
     </script>
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> Photo Gallery
-            <small> | Show Photo Gallery</small>
+        <h1> Thư viện
+            <small> | Xem hình ảnh</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{!! langRoute('admin.photo-gallery.index') !!}"><i class="fa fa-desktop"></i> Photo Gallery</a>
+            <li><a href="{!! langRoute('admin.photo-gallery.index') !!}"><i class="fa fa-desktop"></i> Hình ảnh</a>
             </li>
-            <li class="active">Show Photo Gallery</li>
+            <li class="active">Xem hình ảnh</li>
         </ol>
     </section>
     <br>
@@ -27,30 +27,30 @@
             <div class="pull-left">
                 <div class="btn-toolbar">
                     <a href="{!! langRoute('admin.photo-gallery.index') !!}"
-                       class="btn btn-primary"> <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Back </a>
+                       class="btn btn-primary"> <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Quay lại </a>
                 </div>
             </div>
             <br> <br> <br>
             <table class="table table-striped">
                 <tbody>
                 <tr>
-                    <td><strong>Title</strong></td>
+                    <td><strong>Tiêu đề</strong></td>
                     <td>{!! $photo_gallery->title !!}</td>
                 </tr>
                 <tr>
-                    <td><strong>Content</strong></td>
+                    <td><strong>Nội dung</strong></td>
                     <td>{!! $photo_gallery->content !!}</td>
                 </tr>
                 <tr>
-                    <td><strong>Date Created</strong></td>
+                    <td><strong>Ngày tạo</strong></td>
                     <td>{!! $photo_gallery->created_at !!}</td>
                 </tr>
                 <tr>
-                    <td><strong>Date Updated</strong></td>
+                    <td><strong>Ngày cập nhật</strong></td>
                     <td>{!! $photo_gallery->updated_at !!}</td>
                 </tr>
                 <tr>
-                    <td><strong>Photos</strong></td>
+                    <td><strong>Hình ảnh</strong></td>
                     <td>
                         @if($photo_gallery->photos->count())
                             <div class="row">

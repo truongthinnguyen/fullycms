@@ -25,7 +25,7 @@
         <table class="table table-striped">
             <tbody>
             <tr>
-                <td><strong>Title</strong></td>
+                <td><strong>Tiêu đề</strong></td>
                 <td>{!! $news->title !!}</td>
             </tr>
             <tr>
@@ -33,19 +33,19 @@
                 <td>{!! $news->slug !!}</td>
             </tr>
             <tr>
-                <td><strong>Published</strong></td>
+                <td><strong>Đã xuất bản</strong></td>
                 <td>{!! $news->is_published !!}</td>
             </tr>
             <tr>
-                <td><strong>Content</strong></td>
+                <td><strong>Nội dung</strong></td>
                 <td>{!! $news->content !!}</td>
             </tr>
             <tr>
-                <td><strong>Date Created</strong></td>
+                <td><strong>Ngày tạo</strong></td>
                 <td>{!! $news->created_at !!}</td>
             </tr>
             <tr>
-                <td><strong>Date Updated</strong></td>
+                <td><strong>Ngày cập nhật</strong></td>
                 <td>{!! $news->updated_at !!}</td>
             </tr>
             </tbody>

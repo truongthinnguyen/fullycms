@@ -13,7 +13,7 @@
             <small> | Log View</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Bảng điều khiển</a></li>
             <li class="active">Log View</li>
         </ol>
     </section>

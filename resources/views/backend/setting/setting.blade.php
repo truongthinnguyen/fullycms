@@ -10,7 +10,7 @@
         <small> | Change Settings</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="{!! url(getLang(). '/admin') !!}"><i class="fa fa-dashboard"></i> Bảng điều khiển</a></li>
         <li class="active">Change Settings</li>
     </ol>
 </section>
@@ -20,7 +20,7 @@
 
     @include('flash::message')
     <ul class="nav nav-tabs" id="myTab">
-        <li class="active"><a href="#settings" data-toggle="tab">Settings</a></li>
+        <li class="active"><a href="#settings" data-toggle="tab">Cài đặt</a></li>
         <li><a href="#info" data-toggle="tab">Info</a></li>
     </ul>
 
@@ -35,7 +35,7 @@
 
             <!-- Title -->
             <div class="control-group {!! $errors->has('site_title') ? 'has-error' : '' !!}">
-                <label class="control-label" for="title">Title</label>
+                <label class="control-label" for="title">Tiêu đề</label>
 
                 <div class="controls">
                     {!! Form::text('site_title', ($setting['site_title']) ?: null, array('class'=>'form-control', 'id' => 'site_title', 'placeholder'=>'Title', 'value'=>Input::old('site_title'))) !!}

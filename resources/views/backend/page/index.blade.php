@@ -29,12 +29,11 @@
         });
     </script>
     <section class="content-header">
-        <h1> Page
-            <small> | Control Panel</small>
+        <h1> Trang web
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{!! URL::route('admin.dashboard') !!}">Dashboard</a></li>
-            <li class="active">Page</li>
+            <li><a href="{!! URL::route('admin.dashboard') !!}">Bảng điều khiển</a></li>
+            <li class="active">Trang web</li>
         </ol>
     </section>
     <br>
@@ -46,7 +45,7 @@
 
             <div class="pull-left">
                 <div class="btn-toolbar"><a href="{!! langRoute('admin.page.create') !!}" class="btn btn-primary">
-                        <span class="glyphicon glyphicon-plus"></span>&nbsp;Add Page </a></div>
+                        <span class="glyphicon glyphicon-plus"></span>&nbsp;Thêm trang mới </a></div>
             </div>
             <br> <br> <br>
             @if($pages->count())
@@ -54,11 +53,11 @@
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>Title</th>
-                            <th>Created Date</th>
-                            <th>Updated Date</th>
-                            <th>Action</th>
-                            <th>Settings</th>
+                            <th>Tiêu đề</th>
+                            <th>Ngày tạo</th>
+                            <th>Ngày cập nhật</th>
+                            <th>Hành động</th>
+                            <th>Cài đặt</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -72,27 +71,26 @@
                                 <td>
                                     <div class="btn-group">
                                         <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">
-                                            Action <span class="caret"></span> </a>
+                                            Hành động <span class="caret"></span> </a>
                                         <ul class="dropdown-menu">
                                             <li>
                                                 <a href="{!! langRoute('admin.page.show', array($page->id)) !!}">
-                                                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Show Page
+                                                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Xem trang
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="{!! langRoute('admin.page.edit', array($page->id)) !!}">
-                                                    <span class="glyphicon glyphicon-edit"></span>&nbsp;Edit Page </a>
+                                                    <span class="glyphicon glyphicon-edit"></span>&nbsp;Chỉnh sửa trang </a>
                                             </li>
                                             <li class="divider"></li>
                                             <li>
                                                 <a href="{!! URL::route('admin.page.delete', array($page->id)) !!}">
-                                                    <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;Delete
-                                                    Page </a>
+                                                    <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;Xóa trang </a>
                                             </li>
                                             <li class="divider"></li>
                                             <li>
                                                 <a target="_blank" href="{!! URL::route('dashboard.page.show', ['slug' => $page->slug]) !!}">
-                                                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;View On Site
+                                                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Xem trước
                                                 </a>
                                             </li>
                                         </ul>
@@ -107,7 +105,7 @@
                     </table>
                 </div>
             @else
-                <div class="alert alert-danger">No results found</div>
+                <div class="alert alert-danger">Chưa có trang nào được tạo</div>
             @endif
         </div>
         <div class="pull-left">

@@ -27,7 +27,7 @@
     <table class="table table-striped">
         <tbody>
         <tr>
-            <td><strong>Title</strong></td>
+            <td><strong>Tiêu đề</strong></td>
             <td>{!! $category->title !!}</td>
         </tr>
         </tbody>

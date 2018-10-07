@@ -57,10 +57,10 @@
     </script>
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> News <small> | Edit News</small> </h1>
+        <h1> Tin tức <small> | Chỉnh sửa</small> </h1>
         <ol class="breadcrumb">
-            <li><a href="{!! url(getLang() . '/admin/news') !!}"><i class="fa fa-bookmark"></i> News</a></li>
-            <li class="active">Add News</li>
+            <li><a href="{!! url(getLang() . '/admin/news') !!}"><i class="fa fa-bookmark"></i> Tin tức</a></li>
+            <li class="active">Thêm tin mới</li>
         </ol>
     </section>
     <br>
@@ -69,16 +69,16 @@
         {!! Form::open( array( 'route' => array( getLang() . '.admin.news.update', $news->id), 'method' => 'PATCH', 'files'=>true)) !!}
                 <!-- Title -->
         <div class="control-group {!! $errors->has('title') ? 'has-error' : '' !!}">
-            <label class="control-label" for="title">Title</label>
+            <label class="control-label" for="title">Tiêu đề</label>
 
-            <div class="controls"> {!! Form::text('title', $news->title, array('class'=>'form-control', 'id' => 'title', 'placeholder'=>'Title', 'value'=>Input::old('title'))) !!}
+            <div class="controls"> {!! Form::text('title', $news->title, array('class'=>'form-control', 'id' => 'title', 'placeholder'=>'Tiêu đề', 'value'=>Input::old('title'))) !!}
                 @if ($errors->first('title')) <span class="help-block">{!! $errors->first('title') !!}</span> @endif
             </div>
         </div>
         <br>
         <!-- Datetime -->
         <div class="control-group {!! $errors->has('datetime') ? 'has-error' : '' !!}">
-            <label class="control-label" for="title">Datetime</label>
+            <label class="control-label" for="title">Ngày giờ</label>
 
             <div class="controls">
                 {!! Form::text('datetime', $news->datetime, array('class'=>'form-control', 'id' => 'datetime', 'value'=>Input::old('datetime'))) !!}
@@ -88,10 +88,10 @@
         <br>
         <!-- Content -->
         <div class="control-group {!! $errors->has('content') ? 'has-error' : '' !!}">
-            <label class="control-label" for="title">Content</label>
+            <label class="control-label" for="title">Nội dung</label>
 
             <div class="controls">
-                {!! Form::textarea('content', $news->content, array('class'=>'form-control', 'id' => 'content', 'placeholder'=>'Content', 'value'=>Input::old('content'))) !!}
+                {!! Form::textarea('content', $news->content, array('class'=>'form-control', 'id' => 'content', 'placeholder'=>'Nội dung', 'value'=>Input::old('content'))) !!}
                 @if ($errors->first('content')) <span class="help-block">{!! $errors->first('content') !!}</span> @endif
             </div>
         </div>
@@ -104,13 +104,13 @@
             <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
             <div>
 
-            <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span>
+            <span class="btn btn-default btn-file"><span class="fileinput-new">Chọn hình ảnh</span><span class="fileinput-exists">Thay đổi</span>
                 {!! Form::file('image', null, array('class'=>'form-control', 'id' => 'image', 'placeholder'=>'Image', 'value'=>Input::old('image'))) !!}
                 @if ($errors->first('image'))
                     <span class="help-block">{!! $errors->first('image') !!}</span>
                 @endif
-            </span> <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
-                <button type="button" id="reset" class='btn btn-default'>Reset</button>
+            </span> <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Xóa</a>
+                <button type="button" id="reset" class='btn btn-default'>Làm lại</button>
                 <!--<button type="button" id="reset_trigger" class='btn btn-default'>trigger reset.bs.fileinput</button>
                 <button type="button" id="reset_form" class='btn btn-default'>Reset Form</button>-->
             </div>
@@ -119,7 +119,7 @@
             <div class="control-group {!! $errors->has('is_hot') ? 'has-error' : '' !!}">
                 <div class="controls">
                     <label class="">{!! Form::checkbox('is_hot', 'is_hot',$news->is_hot) !!}
-                        Is Hot ?</label>
+                        Tin hot ?</label>
                     @if ($errors->first('is_hot'))
                         <span class="help-block">{!! $errors->first('is_hot') !!}</span>
                     @endif
@@ -129,7 +129,7 @@
             <div class="control-group {!! $errors->has('is_published') ? 'has-error' : '' !!}">
                 <div class="controls">
                     <label class="">{!! Form::checkbox('is_published', 'is_published',$news->is_published) !!}
-                        Publish ?</label>
+                        Xuất bản ?</label>
                     @if ($errors->first('is_published'))
                         <span class="help-block">{!! $errors->first('is_published') !!}</span>
                     @endif
