@@ -212,7 +212,8 @@ class NewsRepository extends RepositoryAbstract implements NewsInterface, Crudab
     public function update($id, $attributes)
     {
         $attributes['is_published'] = isset($attributes['is_published']) ? true : false;
-
+        $attributes['is_hot'] = isset($attributes['is_hot']) ? true : false;
+        
         $this->news = $this->find($id);
 
         if ($this->isValid($attributes)) {

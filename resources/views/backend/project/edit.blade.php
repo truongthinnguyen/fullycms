@@ -47,6 +47,16 @@
         {!! Form::file('image', null, array('class'=>'form-control', 'id' => 'image', 'placeholder'=>'Image', 'value'=>Input::old('image'))) !!}
       @if ($errors->first('image')) <span class="help-block">{!! $errors->first('image') !!}</span> @endif </span> <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a> </div>
     </div>
+    <!-- Published -->
+    <div class="control-group {!! $errors->has('is_hot') ? 'has-error' : '' !!}">
+        <div class="controls">
+            <label class="">{!! Form::checkbox('is_hot', 'is_hot',$project->is_hot) !!}
+                Is Hot ?</label>
+            @if ($errors->first('is_hot'))
+                <span class="help-block">{!! $errors->first('is_hot') !!}</span>
+            @endif
+        </div>
+    </div>
     <br>
 
     {!! Form::submit('Save', array('class' => 'btn btn-success')) !!}

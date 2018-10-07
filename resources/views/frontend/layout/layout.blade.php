@@ -381,7 +381,8 @@
         });
     }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdEJG14wdhMvkvgu4iYTfA_7hmYc7V25Q&callback=loadGoogleMap"></script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNBF4iwdrt27X6SmQ4MrtfilHIbmW7yqA&callback=loadGoogleMap"
+  type="text/javascript"></script>
 {!! HTML::script("assets/js/mobile-menu.js") !!}
 {!! HTML::script("assets/js/owl.carousel.min.js") !!}
 {!! HTML::script("assets/js/script.js") !!}

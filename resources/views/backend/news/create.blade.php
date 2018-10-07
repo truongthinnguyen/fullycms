@@ -77,6 +77,13 @@
         </div>
         <br>
         <!-- Published -->
+        <div class="control-group {!! $errors->has('is_hot') ? 'has-error' : '' !!}">
+            <div class="controls">
+                <label class="">{!! Form::checkbox('is_hot', 'is_hot') !!} Is Hot ?</label>
+                @if ($errors->first('is_hot'))
+                    <span class="help-block">{!! $errors->first('is_hot') !!}</span> @endif </div>
+        </div>
+        <!-- Published -->
         <div class="control-group {!! $errors->has('is_published') ? 'has-error' : '' !!}">
             <div class="controls">
                 <label class="">{!! Form::checkbox('is_published', 'is_published') !!} Publish ?</label>

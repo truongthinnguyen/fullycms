@@ -140,6 +140,7 @@ class ProjectRepository extends RepositoryAbstract implements ProjectInterface, 
      */
     public function create($attributes)
     {
+        $attributes['is_hot'] = isset($attributes['is_hot']) ? true : false;
         if ($this->isValid($attributes)) {
 
             //--------------------------------------------------------
@@ -196,6 +197,7 @@ class ProjectRepository extends RepositoryAbstract implements ProjectInterface, 
      */
     public function update($id, $attributes)
     {
+        $attributes['is_hot'] = isset($attributes['is_hot']) ? true : false;
         $this->project = $this->find($id);
 
         if ($this->isValid($attributes)) {

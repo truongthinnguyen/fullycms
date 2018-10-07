@@ -48,6 +48,13 @@
       @if ($errors->first('image')) <span class="help-block">{!! $errors->first('image') !!}</span> @endif </span>
             <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a></div>
     </div>
+    <!-- Published -->
+    <div class="control-group {!! $errors->has('is_hot') ? 'has-error' : '' !!}">
+            <div class="controls">
+                <label class="">{!! Form::checkbox('is_hot', 'is_hot') !!} Is Hot ?</label>
+                @if ($errors->first('is_hot'))
+                    <span class="help-block">{!! $errors->first('is_hot') !!}</span> @endif </div>
+    </div>
     <br>
 
     {!! Form::submit('Create', array('class' => 'btn btn-success')) !!}
