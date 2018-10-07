@@ -14,13 +14,13 @@
                     <div class="entity_meta"><a href="#" target="_self">{!! $news->created_at !!}</a></a>
                     </div>
                     
-                    <div class="entity_thumb">
+                    <!-- <div class="entity_thumb">
                         @if($news->path)
                             <img class="img-responsive" src="{!! url($news->path) !!}" alt="feature-top">
                         @else
                             <img class="img-responsive" src="{!! url('assets/images/news_m_thumb.png') !!}" alt="feature-top">
                         @endif
-                    </div>
+                    </div> -->
                     <!-- entity_thumb -->
                     <div class="entity_content">
                         {!! $news->content !!}
